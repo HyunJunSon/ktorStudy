@@ -1,0 +1,40 @@
+GET http://localhost:8080
+
+###
+GET http://localhost:8080/test1
+
+###
+GET http://localhost:8080/content/sample.html
+
+###
+GET http://localhost:8080/error-test
+
+###
+GET http://localhost:8080/tasks
+
+###
+GET http://0.0.0.0:8080/tasks/byPriority/Medium
+
+###
+GET http://0.0.0.0:8080/tasks/byPriority/High
+
+###
+GET http://0.0.0.0:8080/tasks/byPriority/Low1
+
+###
+GET http://0.0.0.0:8080/task-ui/task-form.html
+
+###
+
+POST http://0.0.0.0:8080/tasks
+Content-Type: application/json
+
+{
+  "name": "cooking",
+  "description": "Cook the dinner",
+  "priority": "High"
+}
+
+###
+
+DELETE http://0.0.0.0:8080/tasks/gardening
